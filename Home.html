@@ -1,310 +1,102 @@
-<html>
- <head>
-  <title>
-   Drug Inventory Tracking
-  </title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drug Inventory Tracking</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-  <style>
-   body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background-color: #fff;
-        }
-        header .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        header nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-        }
-        header nav a:hover {
-            text-decoration: underline;
-        }
-        header nav a.sign-up {
-            background-color: #1a2e6c;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-        }
-        header nav a.login {
-            border: 1px solid #1a2e6c;
-            padding: 10px 20px;
-            border-radius: 5px;
-        }
-        .hero {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 100px 20px;
-            background-color: #f8f9fa;
-            text-align: left;
-        }
-        .hero .text {
-            max-width: 600px;
-        }
-        .hero h1 {
-            font-size: 36px;
-            color: #1a2e6c;
-        }
-        .hero p {
-            font-size: 18px;
-            color: #666;
-        }
-        .hero .btn {
-            background-color: #1a2e6c;
-            color: #fff;
-            padding: 15px 30px;
-            border-radius: 5px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 20px;
-        }
-        .hero img {
-            max-width: 100%;
-            height: auto;
-            margin-left: 50px;
-        }
-        .features {
-            padding: 50px 20px;
-            text-align: center;
-        }
-        .features h2 {
-            font-size: 24px;
-            color: #333;
-        }
-        .features p {
-            font-size: 16px;
-            color: #666;
-            margin-bottom: 30px;
-        }
-        .features ul {
-            list-style: none;
-            padding: 0;
-        }
-        .features ul li {
-            font-size: 16px;
-            color: #333;
-            margin: 10px 0;
-            display: flex;
-            align-items: center;
-        }
-        .features ul li i {
-            background-color: #1a2e6c;
-            color: #fff;
-            border-radius: 50%;
-            padding: 10px;
-            margin-right: 10px;
-        }
-        .features .content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .features .text {
-            flex: 1;
-            min-width: 300px;
-        }
-        .features .image {
-            flex: 1;
-            min-width: 300px;
-        }
-        .features img {
-            max-width: 100%;
-            height: auto;
-        }
-        footer {
-            background-color: #1a2e6c;
-            color: #fff;
-            padding: 50px 20px;
-            text-align: center;
-        }
-        footer .footer-links {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        footer .footer-links div {
-            margin: 10px 0;
-        }
-        footer .footer-links a {
-            color: #fff;
-            text-decoration: none;
-            display: block;
-            margin: 5px 0;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        footer .footer-bottom {
-            margin-top: 20px;
-            font-size: 14px;
-        }
-  </style>
- </head>
- <body>
-  <header>
-   <div class="logo">
-    Logo.
-   </div>
-   <nav>
-    <a href="#">
-     Home
-    </a>
-    <a href="#">
-     Sitemap
-    </a>
-    <a href="#">
-     Disclaimer
-    </a>
-    <a href="#">
-     Resources
-    </a>
-    <a href="#">
-     Blog
-    </a>
-    <a class="sign-up" href="#">
-     Sign Up
-    </a>
-    <a class="login" href="#">
-     Login
-    </a>
-   </nav>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-['Roboto'] bg-gray-100 text-gray-800 m-0 p-0">
+
+  <header class="flex justify-between items-center p-5 bg-white">
+    <div class="text-2xl font-bold">
+      Logo.
+    </div>
+    <nav>
+      <a href="#" class="mx-4 text-gray-800 font-medium hover:underline">Home</a>
+      <a href="#" class="mx-4 text-gray-800 font-medium hover:underline">Sitemap</a>
+      <a href="#" class="mx-4 text-gray-800 font-medium hover:underline">Disclaimer</a>
+      <a href="#" class="mx-4 text-gray-800 font-medium hover:underline">Resources</a>
+      <a href="#" class="mx-4 text-gray-800 font-medium hover:underline">Blog</a>
+      <a href="#" class="mx-4 bg-blue-900 text-white py-2 px-4 rounded">Sign Up</a>
+      <a href="#" class="mx-4 border border-blue-900 py-2 px-4 rounded">Login</a>
+    </nav>
   </header>
-  <section class="hero">
-   <div class="text">
-    <h1>
-     Drug Inventory Tracking
-    </h1>
-    <p>
-     Supply Chain Visibility, Traceability and Transparency
-    </p>
-    <a class="btn" href="#">
-     Sign Up
-    </a>
-   </div>
-   <img alt="first image" height="400" src="Ill1.svg"/>
+
+  <section class="flex justify-center items-center p-24 bg-gray-200 text-left">
+    <div class="max-w-lg">
+      <h1 class="text-4xl text-blue-900">Drug Inventory Tracking</h1>
+      <p class="text-xl text-gray-600 mt-4">Supply Chain Visibility, Traceability and Transparency</p>
+      <a href="#" class="bg-blue-900 text-white py-3 px-6 rounded inline-block mt-5">Sign Up</a>
+    </div>
+    <img alt="first image" class="max-w-full h-auto ml-12" src="Ill1.svg"/>
   </section>
-  <section class="features">
-   <div class="content">
-    <div class="text">
-     <h2>
-      Drug Tracking System Features
-     </h2>
-     <p>
-      This is a system that lets you track medicine supply chain. This helps your pharmacy by:
-     </p>
-     <ul>
-      <li>
-       <i class="fas fa-check-circle">
-       </i>
-       Tracking the supply chain without hassle.
-      </li>
-      <li>
-       <i class="fas fa-check-circle">
-       </i>
-       Alerting you when it detects a problem.
-      </li>
-      <li>
-       <i class="fas fa-check-circle">
-       </i>
-       Reducing the supply of counterfeit drugs.
-      </li>
-      <li>
-       <i class="fas fa-check-circle">
-       </i>
-       Giving you a full report of your supply chain.
-      </li>
-     </ul>
+
+  <section class="p-12 text-center">
+    <div class="flex flex-wrap justify-center items-center">
+      <div class="flex-1 min-w-[300px]">
+        <h2 class="text-2xl text-gray-800">Drug Tracking System Features</h2>
+        <p class="text-lg text-gray-600 mt-4 mb-8">This is a system that lets you track medicine supply chain. This helps your pharmacy by:</p>
+        <ul class="list-none p-0">
+          <li class="flex items-center text-lg text-gray-800 mb-2">
+            <i class="fas fa-check-circle bg-blue-900 text-white rounded-full p-2 mr-3"></i>
+            Tracking the supply chain without hassle.
+          </li>
+          <li class="flex items-center text-lg text-gray-800 mb-2">
+            <i class="fas fa-check-circle bg-blue-900 text-white rounded-full p-2 mr-3"></i>
+            Alerting you when it detects a problem.
+          </li>
+          <li class="flex items-center text-lg text-gray-800 mb-2">
+            <i class="fas fa-check-circle bg-blue-900 text-white rounded-full p-2 mr-3"></i>
+            Reducing the supply of counterfeit drugs.
+          </li>
+          <li class="flex items-center text-lg text-gray-800 mb-2">
+            <i class="fas fa-check-circle bg-blue-900 text-white rounded-full p-2 mr-3"></i>
+            Giving you a full report of your supply chain.
+          </li>
+        </ul>
+      </div>
+      <div class="flex-1 min-w-[300px]">
+        <img alt="second image" class="max-w-full h-auto" src="Ill2.svg"/>
+      </div>
     </div>
-    <div class="image">
-     <img alt="second image" height="400" src="Ill2.svg" width="600"/>
-    </div>
-   </div>
   </section>
-  <footer>
-   <div class="footer-links">
-    <div>
-     <h3>
-      Quick Links
-     </h3>
-     <a href="#">
-      Home
-     </a>
-     <a href="#">
-      Login
-     </a>
-     <a href="#">
-      Integrations
-     </a>
-     <a href="#">
-      Report
-     </a>
-     <a href="#">
-      API
-     </a>
+
+  <footer class="bg-blue-900 text-white py-12 text-center">
+    <div class="flex justify-around flex-wrap">
+      <div class="mb-4">
+        <h3 class="text-lg font-semibold">Quick Links</h3>
+        <a href="#" class="block mt-2">Home</a>
+        <a href="#" class="block mt-2">Login</a>
+        <a href="#" class="block mt-2">Integrations</a>
+        <a href="#" class="block mt-2">Report</a>
+        <a href="#" class="block mt-2">API</a>
+      </div>
+      <div class="mb-4">
+        <h3 class="text-lg font-semibold">Solution</h3>
+        <a href="#" class="block mt-2">Chain Analysis</a>
+        <a href="#" class="block mt-2">Security Policy</a>
+        <a href="#" class="block mt-2">Sitemap</a>
+        <a href="#" class="block mt-2">Disclaimer</a>
+      </div>
+      <div class="mb-4">
+        <h3 class="text-lg font-semibold">Support</h3>
+        <a href="#" class="block mt-2">Help</a>
+        <a href="#" class="block mt-2">Resources</a>
+        <a href="#" class="block mt-2">Blog</a>
+        <a href="#" class="block mt-2">Contact</a>
+      </div>
     </div>
-    <div>
-     <h3>
-      Solution
-     </h3>
-     <a href="#">
-      Chain Analysis
-     </a>
-     <a href="#">
-      Security Policy
-     </a>
-     <a href="#">
-      Sitemap
-     </a>
-     <a href="#">
-      Disclaimer
-     </a>
+    <div class="mt-6 text-sm">
+      <p>© 2024 | All Rights Reserved</p>
+      <p>
+        <a href="#" class="text-white hover:underline">Privacy Policy</a> |
+        <a href="#" class="text-white hover:underline">Terms of Service</a>
+      </p>
     </div>
-    <div>
-     <h3>
-      Support
-     </h3>
-     <a href="#">
-      Help
-     </a>
-     <a href="#">
-      Resources
-     </a>
-     <a href="#">
-      Blog
-     </a>
-     <a href="#">
-      Contact
-     </a>
-    </div>
-   </div>
-   <div class="footer-bottom">
-    <p>
-     © 2024 | All Rights Reserved
-    </p>
-    <p>
-     <a href="#" style="color: #fff;">
-      Privacy Policy
-     </a>
-     |
-     <a href="#" style="color: #fff;">
-      Terms of Service
-     </a>
-    </p>
-   </div>
   </footer>
- </body>
+
+</body>
 </html>
