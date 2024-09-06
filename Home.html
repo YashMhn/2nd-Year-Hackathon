@@ -1,102 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Drug Inventory Tracking</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Inventory Tracking</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* You can use Tailwind's utility classes instead of custom CSS */
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
 </head>
-<body class="font-['Roboto'] bg-gray-100 text-gray-800 m-0 p-0">
+<body class="text-gray-800">
 
-  <header class="flex justify-between items-center p-5 bg-white">
-    <div class="text-2xl font-bold">
-      Logo.
-    </div>
-    <nav>
-      <a href="#" class="mx-4 text-gray-800 font-medium hover:underline">Home</a>
-      <a href="#" class="mx-4 text-gray-800 font-medium hover:underline">Sitemap</a>
-      <a href="#" class="mx-4 text-gray-800 font-medium hover:underline">Disclaimer</a>
-      <a href="#" class="mx-4 text-gray-800 font-medium hover:underline">Resources</a>
-      <a href="#" class="mx-4 text-gray-800 font-medium hover:underline">Blog</a>
-      <a href="#" class="mx-4 bg-blue-900 text-white py-2 px-4 rounded">Sign Up</a>
-      <a href="#" class="mx-4 border border-blue-900 py-2 px-4 rounded">Login</a>
-    </nav>
-  </header>
+    <header class="flex justify-between items-center p-4 md:p-8 bg-white border-b border-gray-200">
+        <div class="text-xl font-bold text-blue-900">Logo.</div>
+        <nav class="space-x-4">
+            <a href="#" class="text-gray-800 hover:underline">Home</a>
+            <a href="#" class="text-gray-800 hover:underline">Sitemap</a>
+            <a href="#" class="text-gray-800 hover:underline">Disclaimer</a>
+            <a href="#" class="text-gray-800 hover:underline">Resources</a>
+            <a href="#" class="text-gray-800 hover:underline">Blog</a>
+            <a href="#" class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800">Sign Up</a>
+            <a href="#" class="border border-blue-900 px-4 py-2 rounded text-blue-900 hover:bg-gray-200">Login</a>
+        </nav>
+    </header>
 
-  <section class="flex justify-center items-center p-24 bg-gray-200 text-left">
-    <div class="max-w-lg">
-      <h1 class="text-4xl text-blue-900">Drug Inventory Tracking</h1>
-      <p class="text-xl text-gray-600 mt-4">Supply Chain Visibility, Traceability and Transparency</p>
-      <a href="#" class="bg-blue-900 text-white py-3 px-6 rounded inline-block mt-5">Sign Up</a>
-    </div>
-    <img alt="first image" class="max-w-full h-auto ml-12" src="Ill1.svg"/>
-  </section>
+    <section class="flex flex-col md:flex-row justify-center items-center p-8 bg-gray-100 text-left">
+        <div class="text-center md:text-left max-w-xl">
+            <h1 class="text-4xl font-bold text-blue-900 mb-4">Drug Inventory Tracking</h1>
+            <p class="text-lg text-gray-600 mb-4">Supply Chain Visibility, Traceability and Transparency</p>
+            <a href="#" class="bg-blue-900 text-white px-6 py-3 rounded inline-block hover:bg-blue-800">Sign Up</a>
+        </div>
+        <img alt="first image" src="Ill1.svg" class="w-full md:w-1/2 max-w-md h-auto mt-8 md:mt-0 ml-0 md:ml-8"/>
+    </section>
 
-  <section class="p-12 text-center">
-    <div class="flex flex-wrap justify-center items-center">
-      <div class="flex-1 min-w-[300px]">
-        <h2 class="text-2xl text-gray-800">Drug Tracking System Features</h2>
-        <p class="text-lg text-gray-600 mt-4 mb-8">This is a system that lets you track medicine supply chain. This helps your pharmacy by:</p>
-        <ul class="list-none p-0">
-          <li class="flex items-center text-lg text-gray-800 mb-2">
-            <i class="fas fa-check-circle bg-blue-900 text-white rounded-full p-2 mr-3"></i>
-            Tracking the supply chain without hassle.
-          </li>
-          <li class="flex items-center text-lg text-gray-800 mb-2">
-            <i class="fas fa-check-circle bg-blue-900 text-white rounded-full p-2 mr-3"></i>
-            Alerting you when it detects a problem.
-          </li>
-          <li class="flex items-center text-lg text-gray-800 mb-2">
-            <i class="fas fa-check-circle bg-blue-900 text-white rounded-full p-2 mr-3"></i>
-            Reducing the supply of counterfeit drugs.
-          </li>
-          <li class="flex items-center text-lg text-gray-800 mb-2">
-            <i class="fas fa-check-circle bg-blue-900 text-white rounded-full p-2 mr-3"></i>
-            Giving you a full report of your supply chain.
-          </li>
-        </ul>
-      </div>
-      <div class="flex-1 min-w-[300px]">
-        <img alt="second image" class="max-w-full h-auto" src="Ill2.svg"/>
-      </div>
-    </div>
-  </section>
+    <section class="py-12 px-4 md:px-8">
+        <div class="text-center mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Drug Tracking System Features</h2>
+            <p class="text-base text-gray-600 mb-8">This is a system that lets you track medicine supply chain. This helps your pharmacy by:</p>
+        </div>
+        <div class="flex flex-col md:flex-row justify-center items-center flex-wrap">
+            <div class="flex-1 min-w-[300px] mb-8 md:mb-0 md:mr-8">
+                <ul class="list-none p-0">
+                    <li class="flex items-center mb-4 text-gray-800 text-base">
+                        <i class="fas fa-check-circle bg-blue-900 text-white rounded-full p-2 mr-3"></i>
+                        Tracking the supply chain without hassle.
+                    </li>
+                    <li class="flex items-center mb-4 text-gray-800 text-base">
+                        <i class="fas fa-check-circle bg-blue-900 text-white rounded-full p-2 mr-3"></i>
+                        Alerting you when it detects a problem.
+                    </li>
+                    <li class="flex items-center mb-4 text-gray-800 text-base">
+                        <i class="fas fa-check-circle bg-blue-900 text-white rounded-full p-2 mr-3"></i>
+                        Reducing the supply of counterfeit drugs.
+                    </li>
+                    <li class="flex items-center mb-4 text-gray-800 text-base">
+                        <i class="fas fa-check-circle bg-blue-900 text-white rounded-full p-2 mr-3"></i>
+                        Giving you a full report of your supply chain.
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-1 min-w-[300px]">
+                <img alt="second image" src="Ill2.svg" class="w-full max-w-md h-auto"/>
+            </div>
+        </div>
+    </section>
 
-  <footer class="bg-blue-900 text-white py-12 text-center">
-    <div class="flex justify-around flex-wrap">
-      <div class="mb-4">
-        <h3 class="text-lg font-semibold">Quick Links</h3>
-        <a href="#" class="block mt-2">Home</a>
-        <a href="#" class="block mt-2">Login</a>
-        <a href="#" class="block mt-2">Integrations</a>
-        <a href="#" class="block mt-2">Report</a>
-        <a href="#" class="block mt-2">API</a>
-      </div>
-      <div class="mb-4">
-        <h3 class="text-lg font-semibold">Solution</h3>
-        <a href="#" class="block mt-2">Chain Analysis</a>
-        <a href="#" class="block mt-2">Security Policy</a>
-        <a href="#" class="block mt-2">Sitemap</a>
-        <a href="#" class="block mt-2">Disclaimer</a>
-      </div>
-      <div class="mb-4">
-        <h3 class="text-lg font-semibold">Support</h3>
-        <a href="#" class="block mt-2">Help</a>
-        <a href="#" class="block mt-2">Resources</a>
-        <a href="#" class="block mt-2">Blog</a>
-        <a href="#" class="block mt-2">Contact</a>
-      </div>
-    </div>
-    <div class="mt-6 text-sm">
-      <p>© 2024 | All Rights Reserved</p>
-      <p>
-        <a href="#" class="text-white hover:underline">Privacy Policy</a> |
-        <a href="#" class="text-white hover:underline">Terms of Service</a>
-      </p>
-    </div>
-  </footer>
+    <footer class="bg-blue-900 text-white py-8 px-4 md:px-16 text-center md:text-left">
+        <div class="flex flex-wrap justify-center md:justify-between mb-8">
+            <div class="w-full md:w-1/3 mb-8 md:mb-0">
+                <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
+                <a href="#" class="block mb-2 hover:underline">Home</a>
+                <a href="#" class="block mb-2 hover:underline">Login</a>
+                <a href="#" class="block mb-2 hover:underline">Integrations</a>
+                <a href="#" class="block mb-2 hover:underline">Report</a>
+                <a href="#" class="block mb-2 hover:underline">API</a>
+            </div>
+            <div class="w-full md:w-1/3 mb-8 md:mb-0">
+                <h3 class="text-lg font-semibold mb-3">Solution</h3>
+                <a href="#" class="block mb-2 hover:underline">Chain Analysis</a>
+                <a href="#" class="block mb-2 hover:underline">Security Policy</a>
+                <a href="#" class="block mb-2 hover:underline">Sitemap</a>
+                <a href="#" class="block mb-2 hover:underline">Disclaimer</a>
+            </div>
+            <div class="w-full md:w-1/3">
+                <h3 class="text-lg font-semibold mb-3">Support</h3>
+                <a href="#" class="block mb-2 hover:underline">Help</a>
+                <a href="#" class="block mb-2 hover:underline">Resources</a>
+                <a href="#" class="block mb-2 hover:underline">Blog</a>
+                <a href="#" class="block mb-2 hover:underline">Contact</a>
+            </div>
+        </div>
+        <div class="text-sm mt-4">
+            <p>© 2024 | All Rights Reserved</p>
+            <p>
+                <a href="#" class="hover:underline">Privacy Policy</a> | 
+                <a href="#" class="hover:underline">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
 
 </body>
 </html>
