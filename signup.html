@@ -41,6 +41,7 @@
     </header>
     <main class="flex flex-col-reverse md:flex-row justify-center items-center py-12 px-4">
         <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md mb-8 md:mb-0 md:mr-12">
+            <form>
             <label for="username" class="block font-medium mb-2">Username</label>
             <input type="text" id="username" placeholder="Username" class="w-full p-2 border border-gray-300 rounded mb-4">
 
@@ -61,8 +62,9 @@
                 <option>Admin</option>
             </select>
             
-            <button class="w-full py-2 bg-blue-900 text-white rounded font-medium">Sign Up</button>
+            <input type="submit" class="w-full py-2 bg-blue-900 text-white rounded font-medium" value="Sign Up"></input>
         </div>
+    </form>
         <div class="flex-none">
             <img src="docs/assets/images/Ill4.svg" alt="third image" class="w-full max-w-xs md:max-w-sm h-auto object-contain">
         </div>
